@@ -28,6 +28,7 @@
     if (!([preferences objectForKey:currentColorKey] == nil))
     {
         const NSInteger color = [preferences integerForKey:currentColorKey];
+        
         [self applyColor:(int)color];
     }
     
@@ -43,11 +44,18 @@
     }
 }
 
-// Changes the background color for
-// the entire app when the button is pressed. The color is
-// decided randomly.
+// Changes the background color for the entire app when the button is pressed. The color is decided at random. Saves the current color to NSUserDefaults.
 - (IBAction)colorChange:(id)sender {
     int number = 1 + arc4random_uniform(3);
+    
+    NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
+    
+    NSString *currentColorKey = @"currentcolor";
+    
+    [preferences setInteger:number forKey:currentColorKey];
+    
+    [preferences synchronize];
+    
     [self applyColor:number];
 }
 
