@@ -53,6 +53,9 @@
                                 <rect key="frame" x="150" y="490" width="74" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Interests"/>
+                                <connections>
+                                    <segue destination="iBC-EJ-Gvt" kind="show" id="txb-Is-TfY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -63,6 +66,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="476" y="133.5832083958021"/>
+        </scene>
+        <!--Interests-->
+        <scene sceneID="uWP-DR-PF0">
+            <objects>
+                <viewController id="iBC-EJ-Gvt" customClass="CocoaViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S0k-iJ-bNJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rgT-WQ-hmk">
+                                <rect key="frame" x="67" y="306" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">I have enjoyed watching the robot combat shows "Robot Wars" and "Battlebots" since I was little. In my free time I like reading and taking long walks.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4wc-z7-BcG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Interests" id="VHI-Ux-r6U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8eb-R9-Q70" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797.60000000000002" y="962.96851574212906"/>
         </scene>
         <!--Why I chose IT-Högskolan-->
         <scene sceneID="AH1-oa-2Uh">
@@ -81,9 +110,9 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFL-y9-NLC">
-                                <rect key="frame" x="93" y="518" width="179" height="30"/>
+                                <rect key="frame" x="32" y="519" width="301" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change color for this app"/>
+                                <state key="normal" title="Change the background color of this app"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
