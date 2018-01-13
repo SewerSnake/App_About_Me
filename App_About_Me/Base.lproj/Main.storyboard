@@ -112,13 +112,19 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFL-y9-NLC">
                                 <rect key="frame" x="32" y="519" width="301" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change the background color of this app"/>
+                                <state key="normal" title="Random color changer"/>
+                                <connections>
+                                    <action selector="colorChange:" destination="fNM-G1-dNk" eventType="touchUpInside" id="aC6-yU-TZg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="twX-oR-RZ7"/>
                     </view>
                     <navigationItem key="navigationItem" title="Why I chose IT-Högskolan" id="6QS-47-Kwm"/>
+                    <connections>
+                        <outlet property="colorButton" destination="UFL-y9-NLC" id="zQM-lE-z7Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8eB-MD-bOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
