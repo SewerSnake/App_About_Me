@@ -13,6 +13,7 @@
 		18849B3D2009F89E0082158B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18849B3C2009F89E0082158B /* Assets.xcassets */; };
 		18849B402009F89E0082158B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18849B3E2009F89E0082158B /* LaunchScreen.storyboard */; };
 		18849B432009F89E0082158B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18849B422009F89E0082158B /* main.m */; };
+		18849B4B2009FFA80082158B /* CocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18849B4A2009FFA80082158B /* CocoaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		18849B3F2009F89E0082158B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18849B412009F89E0082158B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18849B422009F89E0082158B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18849B492009FFA80082158B /* CocoaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaViewController.h; sourceTree = "<group>"; };
+		18849B4A2009FFA80082158B /* CocoaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				18849B362009F89E0082158B /* ViewController.h */,
 				18849B372009F89E0082158B /* ViewController.m */,
 				18849B392009F89E0082158B /* Main.storyboard */,
+				18849B492009FFA80082158B /* CocoaViewController.h */,
+				18849B4A2009FFA80082158B /* CocoaViewController.m */,
 				18849B3C2009F89E0082158B /* Assets.xcassets */,
 				18849B3E2009F89E0082158B /* LaunchScreen.storyboard */,
 				18849B412009F89E0082158B /* Info.plist */,
@@ -142,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18849B4B2009FFA80082158B /* CocoaViewController.m in Sources */,
 				18849B382009F89E0082158B /* ViewController.m in Sources */,
 				18849B432009F89E0082158B /* main.m in Sources */,
 				18849B352009F89E0082158B /* AppDelegate.m in Sources */,
