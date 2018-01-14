@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eric" translatesAutoresizingMaskIntoConstraints="NO" id="2UH-Z7-9h1">
-                                <rect key="frame" x="67" y="69" width="240" height="128"/>
+                                <rect key="frame" x="64" y="69" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eric Groseclos Wikås" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bu-vi-LvH">
@@ -38,17 +38,11 @@
                                     <segue destination="fNM-G1-dNk" kind="show" id="B32-7A-ZKg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibN-PB-yqL">
-                                <rect key="frame" x="112" y="594" width="174" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Number guessing game">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="I am from Redondo Beach, California, USA. I came to Sweden when I was six years old." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HRP-Oo-Vee">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HRP-Oo-Vee">
                                 <rect key="frame" x="67" y="269" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">I am from Redondo Beach, California, USA. I came to Sweden when I was six years old. My father was an American. My mother was Swedish.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -60,6 +54,16 @@
                                 </state>
                                 <connections>
                                     <segue destination="iBC-EJ-Gvt" kind="show" id="txb-Is-TfY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibN-PB-yqL">
+                                <rect key="frame" x="97" y="594" width="174" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Number guessing game">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="V71-XA-xYE" kind="show" id="ZfF-J9-vdm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -97,6 +101,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8eb-R9-Q70" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="797.60000000000002" y="962.96851574212906"/>
+        </scene>
+        <!--Number guessing game-->
+        <scene sceneID="Gc0-xX-Pem">
+            <objects>
+                <viewController id="V71-XA-xYE" customClass="CocoaViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="78T-jq-Gfu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eZh-HQ-Pze"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Number guessing game" id="Pka-jA-rud"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2c0-9Y-Ui9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967.2" y="872.11394302848578"/>
         </scene>
         <!--Why I chose IT-Högskolan-->
         <scene sceneID="AH1-oa-2Uh">

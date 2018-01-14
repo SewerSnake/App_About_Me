@@ -31,8 +31,8 @@
         
         [self applyColor:(int)color];
     }
-    
 }
+
 // Changes the color to red, blue or green.
 - (void)applyColor: (int)number {
     if (number == 1) {
