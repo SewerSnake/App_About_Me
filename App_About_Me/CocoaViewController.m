@@ -36,8 +36,6 @@
     
     theNumber = 1 + arc4random_uniform(100);
     
-    NSLog(@(theNumber).stringValue);
-    
     NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
     
     NSString *currentColorKey = @"currentcolor";
@@ -76,16 +74,9 @@
     [self applyColor:number];
 }
 
-// Handles the user's guess.
-// When the 'Guess' button is pressed,
-// the entered number is compared to the hidden
-// number. If the user guessed correctly, he/she
-// is informed that the game has been won.
-// Otherwise, the 'High Low Output' label tells the user that he/she must guess higher or lower.
+// Handles the user's guess. When the 'Guess' button is pressed, the entered number is compared to the hidden number. If the user guessed correctly, he/she is informed that the game has been won. Otherwise, the 'High Low Output' label tells the user that he/she must guess higher or lower.
 - (IBAction)guess:(id)sender {
-    int theGuess = (int)self.inputText.text;
-    
-    NSLog(@(theGuess).stringValue);
+    int theGuess = self.inputText.text.intValue;
     
     if (theGuess == theNumber) {
         self.outputText.text = @"You won!";
