@@ -12,14 +12,31 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *colorButton;
 
+@property (weak, nonatomic) IBOutlet UILabel *outputText;
+
+@property (weak, nonatomic) IBOutlet UITextField *inputText;
+
+@property (weak, nonatomic) IBOutlet UIButton *guessButton;
+
+@property (weak, nonatomic) IBOutlet UILabel *highLowOutput;
+
 @end
 
-@implementation CocoaViewController
+@implementation CocoaViewController {
+    int theNumber;
+}
 
 // Retrieves an integer from NSUserDefaults.
-// Changes the background of the app to the saved color.
+// Changes the background of the app to the saved color. Generates a random number
+// for the game.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.outputText.text = @"Guess a number between 1-100";
+    
+    theNumber = 1 + arc4random_uniform(100);
+    
+    NSLog(@(theNumber).stringValue);
     
     NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
     
@@ -59,6 +76,25 @@
     [self applyColor:number];
 }
 
+// Handles the user's guess.
+// When the 'Guess' button is pressed,
+// the entered number is compared to the hidden
+// number. If the user guessed correctly, he/she
+// is informed that the game has been won.
+// Otherwise, the 'High Low Output' label tells the user that he/she must guess higher or lower.
+- (IBAction)guess:(id)sender {
+    int theGuess = (int)self.inputText.text;
+    
+    NSLog(@(theGuess).stringValue);
+    
+    if (theGuess == theNumber) {
+        self.outputText.text = @"You won!";
+    } else if (theGuess < theNumber) {
+        self.highLowOutput.text = @"Higher!";
+    } else if (theGuess > theNumber) {
+        self.highLowOutput.text = @"Lower!";
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
