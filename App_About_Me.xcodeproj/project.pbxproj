@@ -7,28 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1822ADFD200F8D9700B14F00 /* NumberGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1822ADFC200F8D9700B14F00 /* NumberGameViewController.m */; };
+		1822AE00200F8F3700B14F00 /* WhyIChoseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1822ADFF200F8F3700B14F00 /* WhyIChoseViewController.m */; };
+		1822AE05200F9B8B00B14F00 /* InterestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1822AE04200F9B8B00B14F00 /* InterestsViewController.m */; };
+		1822AE08200FA9CD00B14F00 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1822AE07200FA9CD00B14F00 /* AboutMeViewController.m */; };
 		18849B352009F89E0082158B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18849B342009F89E0082158B /* AppDelegate.m */; };
-		18849B382009F89E0082158B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18849B372009F89E0082158B /* ViewController.m */; };
 		18849B3B2009F89E0082158B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18849B392009F89E0082158B /* Main.storyboard */; };
 		18849B3D2009F89E0082158B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18849B3C2009F89E0082158B /* Assets.xcassets */; };
 		18849B402009F89E0082158B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18849B3E2009F89E0082158B /* LaunchScreen.storyboard */; };
 		18849B432009F89E0082158B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18849B422009F89E0082158B /* main.m */; };
-		18849B4B2009FFA80082158B /* CocoaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18849B4A2009FFA80082158B /* CocoaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1822ADFB200F8D9700B14F00 /* NumberGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberGameViewController.h; sourceTree = "<group>"; };
+		1822ADFC200F8D9700B14F00 /* NumberGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberGameViewController.m; sourceTree = "<group>"; };
+		1822ADFE200F8F3700B14F00 /* WhyIChoseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhyIChoseViewController.h; sourceTree = "<group>"; };
+		1822ADFF200F8F3700B14F00 /* WhyIChoseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhyIChoseViewController.m; sourceTree = "<group>"; };
+		1822AE03200F9B8B00B14F00 /* InterestsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterestsViewController.h; sourceTree = "<group>"; };
+		1822AE04200F9B8B00B14F00 /* InterestsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterestsViewController.m; sourceTree = "<group>"; };
+		1822AE06200FA9CD00B14F00 /* AboutMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
+		1822AE07200FA9CD00B14F00 /* AboutMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
 		18849B302009F89E0082158B /* App_About_Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_About_Me.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18849B332009F89E0082158B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18849B342009F89E0082158B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18849B362009F89E0082158B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18849B372009F89E0082158B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18849B3A2009F89E0082158B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18849B3C2009F89E0082158B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18849B3F2009F89E0082158B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18849B412009F89E0082158B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18849B422009F89E0082158B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		18849B492009FFA80082158B /* CocoaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaViewController.h; sourceTree = "<group>"; };
-		18849B4A2009FFA80082158B /* CocoaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +69,15 @@
 			children = (
 				18849B332009F89E0082158B /* AppDelegate.h */,
 				18849B342009F89E0082158B /* AppDelegate.m */,
-				18849B362009F89E0082158B /* ViewController.h */,
-				18849B372009F89E0082158B /* ViewController.m */,
 				18849B392009F89E0082158B /* Main.storyboard */,
-				18849B492009FFA80082158B /* CocoaViewController.h */,
-				18849B4A2009FFA80082158B /* CocoaViewController.m */,
+				1822AE06200FA9CD00B14F00 /* AboutMeViewController.h */,
+				1822AE07200FA9CD00B14F00 /* AboutMeViewController.m */,
+				1822ADFB200F8D9700B14F00 /* NumberGameViewController.h */,
+				1822ADFC200F8D9700B14F00 /* NumberGameViewController.m */,
+				1822AE03200F9B8B00B14F00 /* InterestsViewController.h */,
+				1822AE04200F9B8B00B14F00 /* InterestsViewController.m */,
+				1822ADFE200F8F3700B14F00 /* WhyIChoseViewController.h */,
+				1822ADFF200F8F3700B14F00 /* WhyIChoseViewController.m */,
 				18849B3C2009F89E0082158B /* Assets.xcassets */,
 				18849B3E2009F89E0082158B /* LaunchScreen.storyboard */,
 				18849B412009F89E0082158B /* Info.plist */,
@@ -147,9 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18849B4B2009FFA80082158B /* CocoaViewController.m in Sources */,
-				18849B382009F89E0082158B /* ViewController.m in Sources */,
+				1822ADFD200F8D9700B14F00 /* NumberGameViewController.m in Sources */,
+				1822AE05200F9B8B00B14F00 /* InterestsViewController.m in Sources */,
 				18849B432009F89E0082158B /* main.m in Sources */,
+				1822AE08200FA9CD00B14F00 /* AboutMeViewController.m in Sources */,
+				1822AE00200F8F3700B14F00 /* WhyIChoseViewController.m in Sources */,
 				18849B352009F89E0082158B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

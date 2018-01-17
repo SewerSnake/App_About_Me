@@ -1,16 +1,14 @@
 //
-//  CocoaViewController.m
+//  NumberGameViewController.m
 //  App_About_Me
 //
-//  Created by Eric Groseclos on 2018-01-13.
+//  Created by Eric Groseclos on 2018-01-17.
 //  Copyright © 2018 Eric Groseclos. All rights reserved.
 //
 
-#import "CocoaViewController.h"
+#import "NumberGameViewController.h"
 
-@interface CocoaViewController ()
-
-@property (weak, nonatomic) IBOutlet UIButton *colorButton;
+@interface NumberGameViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *outputText;
 
@@ -22,24 +20,28 @@
 
 @end
 
-@implementation CocoaViewController {
+@implementation NumberGameViewController {
     int theNumber;
 }
 
-// Retrieves an integer from NSUserDefaults.
-// Changes the background of the app to the saved color. Generates a random number
+// Generates a random number
 // for the game.
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     theNumber = 1 + arc4random_uniform(100);
     
+    [self loadColor];
+}
+
+// Retrieves an integer from NSUserDefaults.
+// Changes the background of the app to the saved color.
+- (void)loadColor {
     NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
     
     NSString *currentColorKey = @"currentcolor";
     
-    if (!([preferences objectForKey:currentColorKey] == nil))
-    {
+    if (!([preferences objectForKey:currentColorKey] == nil)) {
         const NSInteger color = [preferences integerForKey:currentColorKey];
         
         [self applyColor:(int)color];
@@ -55,21 +57,6 @@
     } else if (number == 3) {
         self.view.backgroundColor = [UIColor greenColor];
     }
-}
-
-// Changes the background color for the entire app when the button is pressed. The color is decided at random. Saves the current color to NSUserDefaults.
-- (IBAction)colorChange:(id)sender {
-    int number = 1 + arc4random_uniform(3);
-    
-    NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
-    
-    NSString *currentColorKey = @"currentcolor";
-    
-    [preferences setInteger:number forKey:currentColorKey];
-    
-    [preferences synchronize];
-    
-    [self applyColor:number];
 }
 
 // Handles the user's guess. When the 'Guess' button is pressed, the entered number is compared to the hidden number. If the user guessed correctly, he/she is informed that the game has been won. Otherwise, the 'High Low Output' label tells the user that he/she must guess higher or lower.
@@ -99,15 +86,14 @@
     [super didReceiveMemoryWarning];
 }
 
-
+/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Gets the new view controller
-    //[segue destinationViewController]
-    // Passes the selected object to the new view controller.
-//}
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
