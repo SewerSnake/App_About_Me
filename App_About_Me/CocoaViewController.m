@@ -32,8 +32,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.outputText.text = @"Guess a number between 1-100";
-    
     theNumber = 1 + arc4random_uniform(100);
     
     NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
@@ -80,10 +78,20 @@
     
     if (theGuess == theNumber) {
         self.outputText.text = @"You won!";
+        theNumber = 1 + arc4random_uniform(100);
     } else if (theGuess < theNumber) {
         self.highLowOutput.text = @"Higher!";
+        [self resetOutput];
     } else if (theGuess > theNumber) {
         self.highLowOutput.text = @"Lower!";
+        [self resetOutput];
+    }
+}
+
+// Resets the output for a new game.
+- (void) resetOutput {
+    if (![self.outputText.text isEqualToString:@"Guess a number between 1-100"]) {
+        self.outputText.text = @"Guess a number between 1-100";
     }
 }
 
@@ -95,11 +103,11 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Gets the new view controller
     //[segue destinationViewController]
     // Passes the selected object to the new view controller.
-}
+//}
 
 
 @end
