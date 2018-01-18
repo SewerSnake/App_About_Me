@@ -28,7 +28,7 @@
     NSString *currentColorKey = @"currentcolor";
     
     if (!([preferences objectForKey:currentColorKey] == nil)) {
-        const NSInteger color = [preferences integerForKey:currentColorKey];
+        NSInteger color = [preferences integerForKey:currentColorKey];
         
         [self applyColor:(int)color];
     }
