@@ -18,18 +18,18 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *highLowOutput;
 
+@property (nonatomic) int theNumber;
+
 @end
 
-@implementation NumberGameViewController {
-    int theNumber;
-}
+@implementation NumberGameViewController
 
 // Generates a random number
 // for the game.
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    theNumber = 1 + arc4random_uniform(100);
+    _theNumber = 1 + arc4random_uniform(100);
     
     [self loadColor];
 }
@@ -63,13 +63,13 @@
 - (IBAction)guess:(id)sender {
     int theGuess = self.inputText.text.intValue;
     
-    if (theGuess == theNumber) {
+    if (theGuess == _theNumber) {
         self.outputText.text = @"You won!";
-        theNumber = 1 + arc4random_uniform(100);
-    } else if (theGuess < theNumber) {
+        _theNumber = 1 + arc4random_uniform(100);
+    } else if (theGuess < _theNumber) {
         self.highLowOutput.text = @"Higher!";
         [self resetOutput];
-    } else if (theGuess > theNumber) {
+    } else if (theGuess > _theNumber) {
         self.highLowOutput.text = @"Lower!";
         [self resetOutput];
     }
