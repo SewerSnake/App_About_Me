@@ -14,9 +14,15 @@
 
 @implementation AboutMeViewController
 
+// Loads the background color upon successful creation.
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self loadColor];
+}
+
+// Loads the background color upon navigating back to this View.
+-(void)viewWillAppear:(BOOL)animated {
     [self loadColor];
 }
 
