@@ -25,13 +25,17 @@
 @implementation NumberGameViewController
 
 // Generates a random number
-// for the game.
+// for the game. Ensures that one
+// cannot enter a letter while using
+// the keyboard.
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     _theNumber = 1 + arc4random_uniform(100);
     
     [self loadColor];
+    
+    self.inputText.keyboardType = UIKeyboardTypeNumberPad;
 }
 
 // Retrieves an integer from NSUserDefaults.
